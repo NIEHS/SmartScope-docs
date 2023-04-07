@@ -1,0 +1,22 @@
+ , **Example 1**, **Example 2**
+**Instrument**, , 
+Microscope, Talos Arctica, Titan Krios G4
+Detector, Gatan K2 Summit, Gatan K3
+Energy Filter, , Gatan Bioquantum
+**Low Dose Preset**, , 
+**Search**, ,  
+magnification, 210, 580
+Pixel size (A/pix), 196, 152
+Mode, Linear, Counting
+**View**, ,  
+magnification, 1250,2250
+Pixel size (A/pix), 34.2, 38.9
+Mode, Linear, Counting
+**Focus/Record**, ,  
+magnification, 36 000, 81 000
+Pixel size (A/pix), 1.19, 1.08
+Mode, Counting, Counting
+**Mont-map/Full grid montage**, , 
+magnification, 62, 135
+Pixel size (A/pix), 644, 654
+Mode, Linear, Counting

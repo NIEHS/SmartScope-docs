@@ -1,0 +1,1 @@
+This section aims at describing the user interface and everything that can be done with SmartScope through the Web interface. This is the section that most users need to pay attention to.

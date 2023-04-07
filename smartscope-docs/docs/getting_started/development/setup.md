@@ -1,0 +1,1 @@
+This section aims at describing the setup of a development environment for SmartScope.

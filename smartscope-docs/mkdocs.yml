@@ -1,0 +1,103 @@
+site_name: SmartScope
+site_url: https://docs.smartscope.org
+repo_url: https://github.com/NIEHS/SmartScope
+repo_name: NIEHS/SmartScope
+
+nav:
+  - Home: 
+    - Home: index.md
+    - Participate: participate.md
+  - Getting Started:
+    - Requirements: getting_started/installation/requirements.md
+    - Installation: 
+      - Docker: getting_started/installation/docker/docker.md
+      - External Plugins: getting_started/installation/external_plugins.md
+      - Update: getting_started/update/update_docker.md
+    - Post-install setup:
+      - External python setup: getting_started/post-install/external_python.md
+      - Add your microscopes and detectors: getting_started/post-install/register_microscope.md
+      - Low-dose presets: getting_started/post-install/low_dose.md
+    - Administration: 
+        - Admin Panel: getting_started/administration/admin_panel.md
+        - Groups: getting_started/administration/groups.md
+        - Users: getting_started/administration/users.md
+        - Microscopes: getting_started/administration/microscopes.md
+        - Detectors: getting_started/administration/detectors.md
+    - Advanced Setup:
+      - Environment variables: getting_started/advanced_setup/environment.md
+      - GPU passthrough: getting_started/advanced_setup/gpu.md
+      - Fake scope mode: getting_started/advanced_setup/fake_scope.md
+    # - Development:
+    #   - Setting up a SmartScope Development Environment: getting_started/development/setup.md
+  - Use SmartScope:
+    - Introduction: usage/introduction.md
+    - Preparation:
+      - Prepare SerialEM: usage/preparation/serialem.md
+      - Session Setup: usage/preparation/setup_session.md
+      - Run a Session: usage/preparation/run_session.md
+    - Browsing Results: 
+      - Session Browser: usage/browsing/navigation.md
+    - Report Panel:
+      - Introduction: usage/report/introduction.md
+      - Status Bar: usage/report/status_bar.md
+      - Low-Magnification Maps: usage/report/low_mag_maps.md
+      - High-Magnification Maps: usage/report/high_mag_maps.md
+    - Data Collection:
+      - Multishot per hole: usage/collection/multishot_per_hole.md
+  - API:
+    - REST API:
+      - Programatic: api/rest/prog_api.md
+      - Web Browser: api/rest/web_api.md
+    - Plugin API:
+      - Plugin Interface: api/plugin/interface.md
+      - Configuration: api/plugin/configuration.md
+      - Creating a Plugin: api/plugin/creating.md
+    - Protocol API:
+      - Configuration: api/protocol/configuration.md
+      - Protocol Commands: api/protocol/protocol_commands.md
+      - Automatic Protocol Selection: api/protocol/auto_protocol.md
+  - Cite SmartScope: citation.md
+  - Contact us: contact.md
+theme:
+  name: material
+  logo: assets/icon256px.png
+  favicon: assets/icon32px.png
+  icon:
+    repo: fontawesome/brands/git-alt
+  palette: 
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - search.suggest
+plugins:
+  - search
+  - table-reader
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ['/Users/bouvettej2/SmartScope/Smartscope/']
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - md_in_html
+  - tables
+  - pymdownx.tabbed:
+      alternate_style: true 
