@@ -64,7 +64,9 @@ This section explains how to set up the environment variables for SmartScope
     *options: INFO|DEBUG*
     Set the sensitivity of logging. The default is INFO will print the most informative status updates while debug allows for more in-depth information.
 
-* DEBUG  *Default=True*
+* DEBUG  *Default=False*
+
+    [:material-tools: Fixed in 0.91]() Now working properly
 
     Sets the server in debug mode to return traceback of the error on webpage loading instead of the regular return code.
 
@@ -88,7 +90,9 @@ This section explains how to set up the environment variables for SmartScope
 
     Username for the mariaDB connection
 
-* MYSQL_ROOT_PASSWORD *Default:*
+* MYSQL_PASSWORD *Default:pass*
+
+    [:material-tools: Fixed in 0.91]() Changed from MYSQL_ROOT_PASSWORD.
 
     Password for the user for mariaDB connection
 

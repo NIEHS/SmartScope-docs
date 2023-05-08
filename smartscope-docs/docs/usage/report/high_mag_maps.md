@@ -2,6 +2,12 @@ The high-magnification maps share similarities with the [low-magnification maps]
 
 ![](assets/hm_map.png)
 
+[:material-tag-outline: Added in 0.91]()
+
+Is is now possible to Download the high-mag images as for the low mag maps
+
+
+
 ### Rating exposures
 
 The `Rate` Dropdown allows to give a descriptive rating to the images. They are currently mainly used for notes but may be used in the future as an interaction point. 

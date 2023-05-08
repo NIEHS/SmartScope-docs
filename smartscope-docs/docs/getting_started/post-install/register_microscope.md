@@ -4,7 +4,7 @@ Now that the connection to SerialEM works, we can add our microscope to the data
 
 To do so, navigate to the [admin portal](/getting_started/administration/admin_panel) and then the Microscopes section and add microscope. It should bring you to [localhost:48000/admin/detector/add/](localhost:48000/admin/microscope/add/).
 
-Then follow the instructions on how to [add a microscope](/getting_started/administration/microscope)
+Then follow the instructions on how to [add a microscope](/getting_started/administration/microscopes)
 
 ## Register a detector to the SmartScope database
 
@@ -14,4 +14,4 @@ Then follow the instructions on how to [add a microscope](/getting_started/admin
 
 Similarly to adding a microscope, navigate to the admin portal and then the Detectors section and add. It should bring you to [localhost:48000/admin/detector/add/](localhost:48000/admin/detector/add/).
 
-Then follow the instructions on how to [add a detector](/getting_started/administration/detector)
+Then follow the instructions on how to [add a detector](/getting_started/administration/detectors)

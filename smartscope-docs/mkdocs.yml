@@ -34,6 +34,7 @@ nav:
     - Preparation:
       - Prepare SerialEM: usage/preparation/serialem.md
       - Session Setup: usage/preparation/setup_session.md
+      - Preprocessing Pipeline: usage/preprocessing/preprocesing.md
       - Run a Session: usage/preparation/run_session.md
     - Browsing Results: 
       - Session Browser: usage/browsing/navigation.md

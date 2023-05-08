@@ -1,2 +1,5 @@
 site/
 .DS_Store
+smartscope-docs/docs/.DS_Store
+smartscope-docs/docs/usage/.DS_Store
+smartscope-docs/docs/usage/collection/assets/.DS_Store
