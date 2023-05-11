@@ -12,7 +12,9 @@ nav:
     - Installation: 
       - Docker: getting_started/installation/docker/docker.md
       - External Plugins: getting_started/installation/external_plugins.md
-      - Update: getting_started/update/update_docker.md
+      - Update: 
+        - Update: getting_started/update/update_docker.md
+        - Specific step for some updates: getting_started/update/to_0_9_1.md
     - Post-install setup:
       - External python setup: getting_started/post-install/external_python.md
       - Add your microscopes and detectors: getting_started/post-install/register_microscope.md
@@ -26,9 +28,10 @@ nav:
     - Advanced Setup:
       - Environment variables: getting_started/advanced_setup/environment.md
       - GPU passthrough: getting_started/advanced_setup/gpu.md
-      - Fake scope mode: getting_started/advanced_setup/fake_scope.md
-    # - Development:
-    #   - Setting up a SmartScope Development Environment: getting_started/development/setup.md
+      - Enabling HTTPS: getting_started/advanced_setup/enable_https.md
+    - Development:
+      - Setting up a SmartScope Development Environment: getting_started/development/setup.md
+      - Fake scope mode: getting_started/development/fake_scope.md
   - Use SmartScope:
     - Introduction: usage/introduction.md
     - Preparation:

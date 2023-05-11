@@ -2,7 +2,7 @@ SmartScope has preprocessing capabilities. The preprocessing is a script that ru
 
 ## Preprocesing Pipeline setup menu
 
-[:material-tag-outline: Added in 0.91]()
+[:material-tag-outline: Added in 0.9.1]()
 
 There is now a menu to setup and control the preprocesssing pipeline. 
 

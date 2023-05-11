@@ -92,7 +92,7 @@ This section explains how to set up the environment variables for SmartScope
 
 * MYSQL_PASSWORD *Default:pass*
 
-    [:material-tools: Fixed in 0.91]() Changed from MYSQL_ROOT_PASSWORD.
+    [:material-tools: Fixed in 0.9.1]() Changed from MYSQL_ROOT_PASSWORD.
 
     Password for the user for mariaDB connection
 
