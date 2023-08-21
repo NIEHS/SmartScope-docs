@@ -91,7 +91,7 @@ plugins:
   - mkdocstrings:
       handlers:
         python:
-          paths: ['/Users/bouvettej2/SmartScope/Smartscope/']
+          paths: ['../../SmartScope-dev/SourceCode/Smartscope/']
 
 markdown_extensions:
   - admonition

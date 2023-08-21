@@ -12,9 +12,10 @@ Microscope entries are used to allow connection between SmartScope and SerialEM.
 * **Voltage:** Microscope Voltage on kV
 * **Spherical abberation:** Microscope spherical abberation
 * **Loader Size:** For Autloader microscopes, the value should be 12. Side entry should be 1. If you have a JOEL scope and cannot run a LoadCartridge command from SerialEM, it should be set to 1
+* **Cold FEG:** [:material-tag-outline: Added in 0.9.2]() Enable is you have Cold FEG and activate automatic flashing commands
+* **Aperture Control:** [:material-tag-outline: Added in 0.9.2]() If you have a TFS microscope using SerialEM >=4.1, you may turn this option on to allow automatic aperture swapping commands.
 
 ## Smartscope Worker
-
 
 * **Worker Hostname:** Should remain localhost unless SmartScope is set up as a master-worker configuration. *More details soon*
 * **Executable:** Should remain smartscope.py unless SmartScope is set up as a master-worker configuration. *More details soon* 

@@ -11,7 +11,7 @@ The following table provides guidelines on how to set up the low-dose mode setti
 The search mag is set in LM mode to allow the capture of an entire square in a single acquisition.
 On a K2 detector, we suggest using linear mode for search to maximize contrasts.
 
-##View
+## View
 
 The view mag is using a low SA or M mode magnification to view a few holes. It is currently only used to re-center on a hole.
 

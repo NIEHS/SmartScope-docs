@@ -1,6 +1,6 @@
 ## Email
 
-* Jonathan Bouvette (jonathan.bouvette at nih.gov)
+* Jonathan Bouvette (bouvette at princeton.edu)
 * Mario Borgnia (mario.borgnia at nih.gov)
 * Alberto Bartesaghi (alberto.bartesaghi at duke.edu)
 
