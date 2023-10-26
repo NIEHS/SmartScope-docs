@@ -39,7 +39,13 @@ This section explains how to set up the environment variables for SmartScope
     If you plan on backing up the storage drive to another area with more storage space, the server can look for files in that area for displaying on the website.
     This storage area has second priority to load the files from if the data isn't present in the main storage any longer.
 
-* USE_AWS *Default: False*
+* USE_CUSTOM_PATHS *Default: False* 
+
+    [:material-tag-outline: Added in 0.9.2]()
+
+    Allows to override the default storage areas as the place where all the data gets saved. Specific paths can be set on a per-user or per-group basis. After enabling this, refer to the [Custom Paths section]().
+
+* USE_AWS *Default: False* [:material-test-tube: Still feature incomplete]()
 
     *options: True|False*
     If true, the AWS section of the file will need to be filled up. SmartScope will automatically back up the data for each specimen once they're completed. The data can be loaded from AWS to display on the webpage after it's been removed from the main storage.
@@ -50,7 +56,7 @@ This section explains how to set up the environment variables for SmartScope
     *options: True|False*
     If the instance of Smartscope being deployed is only going to serve as a viewing server that doesn't connect to the microscope, set to False. It will disable the links to setup and run sessions.
 
-* WORKER_HOSTNAME *Default: localhost*
+* WORKER_HOSTNAME *Default: localhost* [:material-test-tube: Currently unused]()
 
     If the webserver and worker (instance connected to the microscope) are not installed in the same computer.
     More details coming soon.
@@ -66,7 +72,7 @@ This section explains how to set up the environment variables for SmartScope
 
 * DEBUG  *Default=False*
 
-    [:material-tools: Fixed in 0.91]() Now working properly
+    [:material-tools: Fixed in 0.9.1]() Now working properly
 
     Sets the server in debug mode to return traceback of the error on webpage loading instead of the regular return code.
 
@@ -78,7 +84,7 @@ This section explains how to set up the environment variables for SmartScope
 
 ## Database
 
-* MYSQL_HOST *Default:localhost*
+* MYSQL_HOST *Default:db*
 
     IP address or hostname of the database server.
 
@@ -96,19 +102,23 @@ This section explains how to set up the environment variables for SmartScope
 
     Password for the user for mariaDB connection
 
-* DB_NAME *Default:smartscope*
+* MYSQL_DATABASE *Default:smartscope*
 
     Name of the database in the mariaDB server
 
-* DB_PATH *Default:/mnt/mariadb*
+* MYSQL_SSL *Default:False*
 
-    Path of the database. Only useful if MYSQL_HOST=localhost
+    Wheter to connect to the database with SSL. This is instented to be used to connect for database over the clout
 
-## AWS connection information
+* MARIADB_RANDOM_ROOT_PASSWORD *Default:1*
+
+    Only used when running in docker to initialize the database.
+
+<!-- ## AWS connection information
 
 .. note:: This feature is currently not functional in v0.8
 
 This section is required if the USE_AWS=True and if the information is not stored in ~/.aws
-Please view `AWS S3 <https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html>`_ information on these variables
+Please view `AWS S3 <https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html>`_ information on these variables -->
 
 

@@ -11,7 +11,6 @@ nav:
     - Requirements: getting_started/installation/requirements.md
     - Installation: 
       - Docker: getting_started/installation/docker/docker.md
-      - External Plugins: getting_started/installation/external_plugins.md
       - Update: 
         - Update: getting_started/update/update_docker.md
         - Specific step for some updates: getting_started/update/to_0_9_1.md
@@ -25,12 +24,14 @@ nav:
         - Users: getting_started/administration/users.md
         - Microscopes: getting_started/administration/microscopes.md
         - Detectors: getting_started/administration/detectors.md
-    - Advanced Setup:
-      - Environment variables: getting_started/advanced_setup/environment.md
-      - GPU passthrough: getting_started/advanced_setup/gpu.md
-      - Enabling HTTPS: getting_started/advanced_setup/enable_https.md
+  - Advanced Setup:
+    - Environment variables: advanced_setup/environment.md
+    - GPU passthrough: advanced_setup/gpu.md
+    - Enabling HTTPS: advanced_setup/enable_https.md
+    - Custom Data Paths: advanced_setup/custom_paths.md
+    - External Plugins: advanced_setup/external_plugins.md
     - Development:
-      - Setting up a SmartScope Development Environment: getting_started/development/setup.md
+      - Setting up a SmartScope Development Environment: advanced_setup/development/setup.md
       - Fake scope mode: getting_started/development/fake_scope.md
   - Use SmartScope:
     - Introduction: usage/introduction.md
@@ -48,6 +49,11 @@ nav:
       - High-Magnification Maps: usage/report/high_mag_maps.md
     - Data Collection:
       - Multishot per hole: usage/collection/multishot_per_hole.md
+  - CLI:
+    - Introduction: cli/introduction.md
+    - Main commands: cli/main_commands.md
+    - Maintenance commands: cli/maintenance_commands.md
+    - Test commands: cli/test_commands.md
   - API:
     - REST API:
       - Programatic: api/rest/prog_api.md

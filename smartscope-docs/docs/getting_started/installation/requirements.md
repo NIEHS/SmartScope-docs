@@ -4,7 +4,7 @@
 
     * JEOL scopes are now supported but not widely tested.
 
-* SerialEM >=4.0:
+* SerialEM >= 4.1-beta:
    
     [Click here](https://bio3d.colorado.edu/SerialEM/) for instructions about how to install and use SerialEM.
 
@@ -14,7 +14,7 @@
     * Required to connect to SerialEM via the [python module](https://bio3d.colorado.edu/SerialEM/hlp/html/about_scripts.htm).
     * Hard drive accessible by SerialEM and SmartScope in real time mounted via NFS, SMB or similar protocol.
     * 2 cpu cores (Recommended 4)
-    * 16 GB RAM
+    * 16 GB RAM per microscope that will connect to the instance.
 
     !!! note "Windows support"
 
@@ -22,7 +22,9 @@
 
 * Chrome Web or Firefox web browser
 
-    * Safari is completely incompatible.
+    !!! warning "Safari compatibility"
+        
+        Safari browser is incompatible.
     
      
 ## Installation options

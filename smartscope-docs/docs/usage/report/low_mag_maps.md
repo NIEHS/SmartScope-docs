@@ -70,6 +70,12 @@ To enable the Action dropdown, at least one target should be selected.
 
 Clicking on the actions button will bring a few options change the label given to a hole and, if the grid status is `started`, you may also add or remove the target(s) from the acquisition queue depending on its/their status.
 
+#### Skip an active target
+
+[:material-tag-outline: Added in 0.9.2]()
+
+It is possible to skip a started (yellow) target. This is useful if a bad target was automatically selected or ran into an issue. The Skip will turn the target to a gray color. Checkpoints have been added at which the processing of the target will be stopped and the process will move on the next item. On a run restart, the skipped target will be avoided.
+
 !!! note "Changing the acquisition status in bulk"
 
     To add/remove multiple targets from the queue at once, you need to select targets from only one type of status. For example, select only squares that are not in the queue and remove them all at once and vice versa.

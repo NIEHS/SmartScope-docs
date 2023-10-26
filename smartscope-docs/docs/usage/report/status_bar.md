@@ -31,7 +31,7 @@ Here are the potential statuses:
 
 Next to the status are 2 buttons:
 
-* `Stop`: Will remove all queued target from queue and change the grid status to `aborting`
+* `Abort` [:material-pencil: Changed from Stop in 0.9.2](): Will remove all queued target from queue and change the grid status to `aborting` and skip to the next grid after the current action is completed.
 * `Restart`: This is a way force the status an `aborted` or `completed` grid back to `started`. The next time the session will be started, it will go back to this grid.
 
 !!! note "Restarting a grid"
