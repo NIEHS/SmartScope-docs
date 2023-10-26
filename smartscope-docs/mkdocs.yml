@@ -32,13 +32,13 @@ nav:
     - External Plugins: advanced_setup/external_plugins.md
     - Development:
       - Setting up a SmartScope Development Environment: advanced_setup/development/setup.md
-      - Fake scope mode: getting_started/development/fake_scope.md
+      - Fake scope mode: advanced_setup/development/fake_scope.md
   - Use SmartScope:
     - Introduction: usage/introduction.md
     - Preparation:
       - Prepare SerialEM: usage/preparation/serialem.md
       - Session Setup: usage/preparation/setup_session.md
-      - Preprocessing Pipeline: usage/preprocessing/preprocesing.md
+      - Preprocessing Pipeline: usage/preprocessing/preprocessing.md
       - Run a Session: usage/preparation/run_session.md
     - Browsing Results: 
       - Session Browser: usage/browsing/navigation.md

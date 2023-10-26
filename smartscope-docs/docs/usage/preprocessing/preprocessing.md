@@ -4,12 +4,12 @@ SmartScope has preprocessing capabilities. The preprocessing is a script that ru
 
 [:material-tag-outline: Added in 0.9.1]()
 
-There is now a menu to setup and control the preprocesssing pipeline. 
+There is now a menu to setup and control the preprocessing pipeline. 
 
 It can be accessed:
 
-- During the [setup of a session](/usage/preparation/setup_session.md)
-- In the grid report page using the `Show preprocessing` button in the [status bar](/usage/report/status_bar.md)
+- During the [setup of a session](/usage/preparation/setup_session/)
+- In the grid report page using the `Show preprocessing` button in the [status bar](/usage/report/status_bar/)
 
 ### During setup
 
