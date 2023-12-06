@@ -3,47 +3,76 @@
 
 This section outlines the steps to update your SmartScope installation with Podman/Docker
 
-1. (Optional) Back up your database
+!!! warning
 
-    !!! warning
+    The database is no backwards compatible between versions. Please back up the database before updating to have a fallback.
 
-        This step is to protect your data in case the update fails.
 
-    ```shell-session
-    ## REPLACE YYYYMMDD by the current date ##
-    sudo podman exec smartscope-db /bin/bash -c 'mysqldump --user=$MYSQL_USER --password=$MYSQL_ROOT_PASSWORD $MYSQL_DATABASE > /var/lib/mysql/YYYYMMDD_dump.sql'
-    ```
+=== "Version 0.9.2"
 
-2. Stop SmartScope
+    !!! note
 
-    ```shell-session
-    cd /to/Smartscope/directory/
-    ./smartscope.sh stop
-    ```
+        If you initially installed a version older than 0.9.2, first download the new smartscope.sh script as described [here](/getting_started/update/to_0_9_1/)
 
-3. Change version in `smartscope.yml`
+    1. Run the smartscope update command.
 
-    To update your docker installation open the `smartscope.yml` file
-    ```shell-session
-    vim smartscope.yml
-    ```
-    Edit the image line to a new version available in [GitHub container repository](https://github.com/NIEHS/SmartScope/pkgs/container/smartscope)
-    ```yaml
-    version: "3"
-    services:
-    smartscope:
-      image: ghcr.io/niehs/smartscope:CHANGE_VERSION_NUMBER
-      user: ${UID}:${GID}
-      volumes: 
-        ...
-    ```
+        ```shell-session
+        #Choose with version you want to update to: latest or stable
+        #Replace VERSION with your choice
 
-4. Restart smartscope
+        ./smartscope.sh update VERSION
+        ```
 
-    ```shell-session
-    ./smartscope.sh start
-    ```
+    2. Restart SmartScope
 
-    The login screen should show the new version number
+        ```shell-session
+        ./smartscope.sh restart    
+        ```
 
-    ![](../assets/update_version.png)
+
+=== "Version <=0.9.1"
+
+    1. (Optional) Back up your database
+
+        !!! warning
+
+            This step is to protect your data in case the update fails.
+
+        ```shell-session
+        ## REPLACE YYYYMMDD by the current date ##
+        sudo podman exec smartscope-db /bin/bash -c 'mysqldump --user=$MYSQL_USER --password=$MYSQL_ROOT_PASSWORD $MYSQL_DATABASE > /var/lib/mysql/YYYYMMDD_dump.sql'
+        ```
+
+    2. Stop SmartScope
+
+        ```shell-session
+        cd /to/Smartscope/directory/
+        ./smartscope.sh stop
+        ```
+
+    3. Change version in `smartscope.yml`
+
+        To update your docker installation open the `smartscope.yml` file
+        ```shell-session
+        vim smartscope.yml
+        ```
+        Edit the image line to a new version available in [GitHub container repository](https://github.com/NIEHS/SmartScope/pkgs/container/smartscope)
+        ```yaml
+        version: "3"
+        services:
+        smartscope:
+        image: ghcr.io/niehs/smartscope:CHANGE_VERSION_NUMBER
+        user: ${UID}:${GID}
+        volumes: 
+            ...
+        ```
+
+    4. Restart smartscope
+
+        ```shell-session
+        ./smartscope.sh start
+        ```
+
+        The login screen should show the new version number
+
+        ![](../assets/update_version.png)

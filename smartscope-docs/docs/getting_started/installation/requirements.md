@@ -13,8 +13,8 @@
 
     * Required to connect to SerialEM via the [python module](https://bio3d.colorado.edu/SerialEM/hlp/html/about_scripts.htm).
     * Hard drive accessible by SerialEM and SmartScope in real time mounted via NFS, SMB or similar protocol.
-    * 2 cpu cores (Recommended 4)
-    * 16 GB RAM per microscope that will connect to the instance.
+    * 4 cpu cores (Recommended 8)
+    * 24 GB RAM per microscope that will connect to the instance.
 
     !!! note "Windows support"
 

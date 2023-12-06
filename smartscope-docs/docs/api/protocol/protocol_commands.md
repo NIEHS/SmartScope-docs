@@ -12,7 +12,18 @@ All protocol commands have the same input arguments:
 
 ## Available commands
 
+### SmartScope core commands
+
 ::: core.protocol_commands
+    options:
+        show_root_heading: True
+        show_source: false
+
+### Commands specific to plugins
+
+#### Ptolemy
+
+::: ptolemy-smartscope.smartscope_plugin.protocol_commands
     options:
         show_root_heading: True
         show_source: false
