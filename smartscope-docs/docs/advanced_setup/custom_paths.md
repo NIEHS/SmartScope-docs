@@ -38,8 +38,8 @@ Go to the admin portal, usually `http://localhost:48000/admin/`
 
 The session can be in any of the following location. SmartScope will look in the order through all the possible locations for the session.
 
-1. Custom Group Path (if defined)
-2. Custom User Path (if defined)
+1. Custom User Path (if defined)
+2. Custom Group Path (if defined)
 3. AUTOSCREENDIR/group/ (if USE_STORAGE=True)
 4. AUTOSCREENSTORAGE/group/ (if USE_LONGTERMSTORAGE=True)
 5. AWS/group (if USE_AWS=True)
