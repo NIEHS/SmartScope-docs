@@ -30,25 +30,33 @@ nav:
     - Enabling HTTPS: advanced_setup/enable_https.md
     - Custom Data Paths: advanced_setup/custom_paths.md
     - External Plugins: advanced_setup/external_plugins.md
+    - Edit default values: advanced_setup/edit_default_setup.md
     - Development:
       - Setting up a SmartScope Development Environment: advanced_setup/development/setup.md
       - Fake scope mode: advanced_setup/development/fake_scope.md
   - Use SmartScope:
     - Introduction: usage/introduction.md
-    - Preparation:
-      - Prepare SerialEM: usage/preparation/serialem.md
-      - Session Setup: usage/preparation/setup_session.md
-      - Preprocessing Pipeline: usage/preprocessing/preprocessing.md
-      - Run a Session: usage/preparation/run_session.md
-    - Browsing Results: 
-      - Session Browser: usage/browsing/navigation.md
-    - Report Panel:
-      - Introduction: usage/report/introduction.md
-      - Status Bar: usage/report/status_bar.md
-      - Low-Magnification Maps: usage/report/low_mag_maps.md
-      - High-Magnification Maps: usage/report/high_mag_maps.md
-    - Data Collection:
-      - Multishot per hole: usage/collection/multishot_per_hole.md
+    - User Interface:
+      - Preparation:
+        - Prepare SerialEM: usage/preparation/serialem.md
+        - Session Setup: usage/preparation/setup_session.md
+        - Preprocessing Pipeline: usage/preprocessing/preprocessing.md
+        - Run a Session: usage/preparation/run_session.md
+      - Browsing Results: 
+        - Session Browser: usage/browsing/navigation.md
+      - Report Panel:
+        - Introduction: usage/report/introduction.md
+        - Status Bar: usage/report/status_bar.md
+        - Low-Magnification Maps: usage/report/low_mag_maps.md
+        - High-Magnification Maps: usage/report/high_mag_maps.md
+      - Data Collection:
+        - Multishot per hole: usage/collection/multishot_per_hole.md
+    # - Detailed procedures:
+    #   - Screening: 
+    #     - Holey grid: usage/protocols/screening/holey_grid.md
+    #     - Lacey grid: usage/protocols/screening/lacey_grid.md
+    # - Acquisition procotols:
+    #   - SPA: usage/acquisition_protocols/spa.md
   - CLI:
     - Introduction: cli/introduction.md
     - Main commands: cli/main_commands.md
@@ -97,9 +105,7 @@ plugins:
   - mkdocstrings:
       handlers:
         python:
-          paths: 
-             - ../../SmartScope-dev/SourceCode/Smartscope
-             - ../../SmartScope-dev/external_plugins/
+          paths: ['./src/SmartScope/Smartscope', './src/external_plugins']
 
 markdown_extensions:
   - admonition

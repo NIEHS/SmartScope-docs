@@ -90,6 +90,30 @@ The square maps have extra actions.
 
 ![](assets/map_square.png)
 
+#### Edit targets
+
+[:material-tag-outline: Added in 0.9.3]()
+
+The edit target menu is accessible if a `Selector` had been selected in the [Display options](#display-options)
+
+A pencil icon will appear on the card. Clicking it will bring the `Selector Viewer` menu.
+
+![Selector Viewer](assets/selectorviewer.png)
+
+1. Click on the pencil icon to bring the selector viewer
+
+2. Edit the values using the slider dials.
+
+    The 3 sample images will update in real time with the value change
+
+3. Save the changes
+
+    - `Save` will apply the selector to the current grid.
+    - `Save to session` will apply the values to all the grids in the session. Can be useful for multi-grid sessions but will yield odd results if diffirent mesh types are used.
+
+4. After saving, you'll have the option to regroup the Beam-image shift grouping and reselect the holes on the entire grid. This will take a few seconds to propagate.
+
+
 #### All Holes
 
 These are quick ways to act on every targets without selecting them individually. These bulk actions are convinient mainly for data collection.

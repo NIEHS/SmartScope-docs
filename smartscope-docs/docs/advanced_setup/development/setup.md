@@ -7,7 +7,7 @@ This section aims at describing the setup of a development environment for Smart
 3. Clone the dev branch from your fork or the main repository. 
 ```
 ## Run this in the directory where smartscope is installed
-git clone git@github.com:NIEHS/SmartScope.git SmartScope-dev -b dev
+git clone https://github.com/NIEHS/SmartScope.git SmartScope-dev -b dev
 ```
 
 4. Mount the source code as a volume to the smartscope container. 
@@ -24,7 +24,7 @@ git clone git@github.com:NIEHS/SmartScope.git SmartScope-dev -b dev
     version: "3"
     services:
       smartscope:
-        image: ghcr.io/niehs/smartscope:0.9.2-dev
+        image: ghcr.io/niehs/smartscope:dev
         user: 0:0 #This corresponds to the user running the smarscope.sh script
         volumes:
           - ./SmartScope-dev/:/opt/smartscope/

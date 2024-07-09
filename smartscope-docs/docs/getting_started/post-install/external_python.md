@@ -12,15 +12,13 @@ Otherwise, `SockerServerIP 7` should be the IP of the SerialEM PC.
 * Gatan PC IP: 192.168.0.32
 * SerialEM is installed on the Gatan PC
 
-The following lines should be added to `SerialEMproperties.txt`.
+The following lines should be added to `SerialEMproperties.txt`. 
 
 ```text
-SocketServerIP                  1 192.168.0.3
-SocketServerPort                1 48892
-SocketServerIP                  7 192.168.0.3
-SocketServerPort                7 48888
 EnableExternalPython            1
 ```
+
+It will enable the connection of SmartScope and other external python script to SerialEM at the SerialEM PC IP address (192.168.0.32 in the example above) on port 48888.
 
 !!! tip
     
