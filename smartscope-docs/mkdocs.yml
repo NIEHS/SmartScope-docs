@@ -51,12 +51,13 @@ nav:
         - High-Magnification Maps: usage/report/high_mag_maps.md
       - Data Collection:
         - Multishot per hole: usage/collection/multishot_per_hole.md
-    # - Detailed procedures:
-    #   - Screening: 
-    #     - Holey grid: usage/protocols/screening/holey_grid.md
-    #     - Lacey grid: usage/protocols/screening/lacey_grid.md
-    # - Acquisition procotols:
-    #   - SPA: usage/acquisition_protocols/spa.md
+    - Detailed procedures:
+      - Data collection: usage/detailed_procedures/data_collection.md
+    - Acquisition procotols:
+      - General information: usage/acquisition_protocols/general.md
+      - SPA and SPA-precise: usage/acquisition_protocols/spa.md
+      - NegativeStain: usage/acquisition_protocols/negative_stain.md
+      - SPA-Ptolemy and SPA-Ptolemy-precise: usage/acquisition_protocols/spa_ptolemy.md
   - CLI:
     - Introduction: cli/introduction.md
     - Main commands: cli/main_commands.md
